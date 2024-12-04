@@ -1,18 +1,54 @@
-# Astro Starter Kit: Basics
+# **Ecuador In Tech**
 
-```sh
-npm create astro@latest -- --template basics
-```
+**¡Únete a la meta-comunidad que impulsa el futuro de la tecnología en Ecuador!**
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Somos un espacio colaborativo donde desarrolladores, diseñadores, emprendedores y entusiastas de la tecnología se unen para compartir conocimientos, construir proyectos y fomentar el crecimiento del ecosistema tecnológico ecuatoriano.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### **Nuestra Visión**
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Ser la referencia en Ecuador para conectar, fortalecer y ampliar el impacto de las comunidades tecnológicas.
 
-## 🚀 Project Structure
+### **Nuestra Misión**
+
+* **Unir fuerzas:** Crear puentes entre las diferentes comunidades tecnológicas.
+* **Amplificar el impacto:** Potenciar el alcance y visibilidad de las iniciativas locales.
+* **Crear oportunidades:** Generar espacios para el aprendizaje, networking y desarrollo profesional.
+
+### **Valores**
+
+* **Colaboración**
+* **Diversidad**
+* **Inclusión**
+* **Sostenibilidad**
+
+### **Cómo Participar**
+
+* **Eventos:** Asiste a nuestros meetups, conferencias y talleres.
+* **Proyectos:** Colabora en proyectos open-source o crea los tuyos.
+* **Comunidades:** Únete a nuestros grupos de estudio y foros de discusión.
+* **Mentoría:** Ofrece o recibe mentoría de otros miembros de la comunidad.
+* **Contenido:** Comparte tus conocimientos a través de blog posts, tutoriales o podcasts.
+
+### **Código de Conducta**
+
+Creemos en un entorno seguro y respetuoso para todos. Adherimos a los siguientes principios:
+
+* **Respeto:** Trata a todos con dignidad y cortesía.
+* **Inclusión:** Fomenta un ambiente donde todos se sientan bienvenidos.
+* **Colaboración:** Trabaja en equipo y comparte conocimientos.
+* **Integridad:** Actúa con honestidad y ética.
+
+[nuestro código de conducta](CODE_OF_CONDUCT.md)
+
+### **Únete a Nosotros**
+
+* **GitHub:** [\[Ecuador In Tech\]](https://github.com/Ecuador-In-Tech)
+
+**¡Juntos construiremos un futuro tecnológico más próspero para Ecuador!*
+
+## How to run the project
+
+### 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
@@ -30,7 +66,7 @@ Inside of your Astro project, you'll see the following folders and files:
 
 To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 🧞 Commands
+### 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -43,6 +79,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
