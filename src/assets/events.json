@@ -9,7 +9,7 @@
       "place": "Online",
       "modality": "Virtual",
       "hostedBy": "Ecuador In Tech",
-      "image": "src/assets/github-workshop.jpg",
+      "image": "/github-workshop.jpg",
       "attendees": 31
     }
   ]
