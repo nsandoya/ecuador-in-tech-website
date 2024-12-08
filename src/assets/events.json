@@ -1,5 +1,6 @@
 [
     {
+      "id": "git-github-workshop",
       "title": "Git & GitHub",
       "description": "Hands-on Workshop para iniciantes.",
       "links": [
@@ -12,5 +13,4 @@
       "image": "/github-workshop.jpg",
       "attendees": 31
     }
-  ]
-  
+]
