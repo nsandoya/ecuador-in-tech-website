@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import events from '../assets/events.json'
 import CardEvent from '../components/CardEvent.astro'
-import type { Event } from '../interfaces/events'
+import type { Event, SocialMedia } from '../interfaces/events'
 import Banner from '../components/ui/Banner.astro'
 import ButtonOutlinedWhite from '../components/ui/ButtonOutlinedWhite.astro'
 import LinkTo from '../components/ui/LinkTo.astro'
@@ -11,11 +11,22 @@ import LinksBar from '../components/LinksBar.astro'
 import HeaderLandingPage from '../components/HeaderLandingPage.astro'
 import ProfileCard from '../components/ui/ProfileCard.astro'
 
+const sm:SocialMedia[] = [
+  {
+    socialMedia: "github",
+    url: "github.com"
+  },
+  {
+    socialMedia: "linkedin",
+    url: "linkedin.com"
+  },
+
+]
 ---
 
 <Layout title="Events - Ecuador In Tech">
   <HeaderLandingPage title="Git + GitHub"/>
-  <ProfileCard url={"ffe"} title="Ponente" subtitle="Profesión"/>
+  <ProfileCard url={"ffe"} title="Ponente" subtitle="Profesión" socialMedia={sm} url="frefef"/>
   <div class="container mx-auto px-4 py-12" x-data="{ selectedEvent: null }">
     <h1 class="text-4xl font-bold mb-8">Eventos</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

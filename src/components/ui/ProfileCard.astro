@@ -1,5 +1,5 @@
 ---
-import type {SocialMedia} from '../../interfaces/communities'
+import type {SocialMedia} from '../../interfaces/events'
 import SocialMediaIcon from './SocialMediaIcon.astro'
 
 interface Props{
@@ -11,7 +11,7 @@ interface Props{
 
 
 const photoLink = "https://www.perfocal.com/blog/content/images/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg"
-const {url, title, subtitle, socialMedia} = Astro.props
+const {url, title, subtitle, socialMedia:rrss} = Astro.props
 ---
 <div class="flex flex-col items-center">
     <img
@@ -22,9 +22,9 @@ const {url, title, subtitle, socialMedia} = Astro.props
     />
     <h4 class="font-bold text-center text-xl text-slate-700">{title}</h4>
     <p class="text-center text-slate-600">{subtitle}</p>
-    <div>
-        {socialMedia?.map(({socialMediaPlatform, url}:SocialMedia) => (
-            <SocialMediaIcon socialMedia={socialMediaPlatform} url={url}/>
+    <div class="flex flex-row">
+        {rrss?.map(({socialMedia, url}:SocialMedia) => (
+            <SocialMediaIcon socialMedia={socialMedia} url={url}/>
         ))}
     </div>
 

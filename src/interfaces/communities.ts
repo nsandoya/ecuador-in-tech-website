@@ -11,7 +11,3 @@ export interface Links{
     social: string
 }
 
-export interface SocialMedia {
-    socialMediaPlatform: string,
-    url: string
-}
