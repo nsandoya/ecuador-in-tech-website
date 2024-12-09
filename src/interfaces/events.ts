@@ -1,7 +1,7 @@
 export interface Event {
     title: string,
     description: string,
-    links: string[],
+    link: string,
     date: string,
     place: string,
     modality: string,
