@@ -1,16 +1,18 @@
 ---
 interface Props{
-    title: string
+    title: string,
+    link?: string
 }
 
-const {title} = Astro.props
+const {title, link} = Astro.props
 ---
 <!-- Pienso esto a futuro: al hacer click, el usuario podríaser redirigido a la página principal de eventos, con el tag como criterio de búsqueda -->
 <a 
-    href=""
+    href={link}
     class="text-blue-500
             font-bold p-2
             hover:text-blue-700
+            hover:cursor-pointer
     ">
     {title}
 </a>

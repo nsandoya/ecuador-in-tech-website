@@ -1,0 +1,15 @@
+---
+import LinkTo from './ui/LinkTo.astro'
+
+interface Props{
+    links: string[]
+}
+
+const {links=[]} = Astro.props
+---
+<div class="w-fit bg-blue-200 rounded-xl px-10 py-3 text-center">
+    <span class="font-semibold text-slate-500">By:</span>
+    {links.map((link) => (
+        <LinkTo title={link} link={link}/>
+    ))}
+</div>

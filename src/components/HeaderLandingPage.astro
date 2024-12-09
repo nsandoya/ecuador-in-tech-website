@@ -1,0 +1,28 @@
+---
+import type { Event } from "../interfaces/events";
+import LinksBar from "./LinksBar.astro";
+import Banner from "./ui/Banner.astro";
+import ButtonOutlinedWhite from "./ui/ButtonOutlinedWhite.astro";
+import Tag from "./ui/Tag.astro";
+
+const {title, links=[], hostedBy} = Astro.props as Event
+
+---
+<div class="bg-white">
+    <Banner url="ee"/>
+    <div class="h-72 bg-white
+        flex flex-col text-center justify-center">
+        <h1 class="text-slate-800 font-black text-8xl ">{title}</h1>
+        <div class="mt-6 mb-4 flex flex-row items-center justify-center">
+            <div class="flex flex-row">
+                <Tag tag="Livecoding"/>
+                <Tag tag="Networking"/>
+                <Tag tag="Development"/>
+            </div>
+            <ButtonOutlinedWhite text="Inscríbete"/>
+        </div>
+        <div class="self-center">
+            <LinksBar links={["ecuadorintech.org"]}/>
+        </div>
+    </div>
+</div>
