@@ -11,32 +11,9 @@ import LinksBar from '../components/LinksBar.astro'
 import HeaderLandingPage from '../components/HeaderLandingPage.astro'
 import ProfileCard from '../components/ui/ProfileCard.astro'
 import InfoBar from '../components/InfoBar.astro'
-
-const sm:SocialMedia[] = [
-  {
-    socialMedia: "github",
-    url: "github.com"
-  },
-  {
-    socialMedia: "linkedin",
-    url: "linkedin.com"
-  },
-
-]
-
-const eventInfo = 
-  {
-    date:"Miércoles 15/10/2024 - 09H00",
-    place: "UCSG"
-  }
 ---
 
 <Layout title="Events - Ecuador In Tech">
-  <HeaderLandingPage title="Git + GitHub"/>
-  <ProfileCard url={"ffe"} title="Ponente" subtitle="Profesión" socialMedia={sm} url="frefef"/>
-
-  <InfoBar {...eventInfo}/>
-
   <div class="container mx-auto px-4 py-12" x-data="{ selectedEvent: null }">
     <h1 class="text-4xl font-bold mb-8">Eventos</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
