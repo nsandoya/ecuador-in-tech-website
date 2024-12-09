@@ -5,8 +5,9 @@ import tailwind from '@astrojs/tailwind';
 
 import alpinejs from '@astrojs/alpinejs';
 
+import sitemap from '@astrojs/sitemap';
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://ecuadorintech.org",
-  integrations: [tailwind(), alpinejs()]
-});
+  integrations: [tailwind(), alpinejs(), sitemap()]
