@@ -7,7 +7,10 @@ import alpinejs from '@astrojs/alpinejs';
 
 import sitemap from '@astrojs/sitemap';
 
+import compressor from 'astro-compressor';
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://ecuadorintech.org",
-  integrations: [tailwind(), alpinejs(), sitemap()]
+  integrations: [tailwind(), alpinejs(), sitemap(), compressor()]
+});

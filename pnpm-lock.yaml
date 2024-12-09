@@ -29,6 +29,9 @@ importers:
       astro:
         specifier: ^5.0.2
         version: 5.0.2(jiti@1.21.6)(rollup@4.28.0)(typescript@5.7.2)(yaml@2.6.1)
+      astro-compressor:
+        specifier: ^1.0.0
+        version: 1.0.0
       tailwindcss:
         specifier: ^3.4.16
         version: 3.4.16
@@ -727,6 +730,9 @@ packages:
 
   array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
+
+  astro-compressor@1.0.0:
+    resolution: {integrity: sha512-MNGRmjIsb73BIJivbU/HnTbPu5CEFvXp1NCev0bpsuK/cp4cCPX6C1omUPXzw2oQbtKv0phTTTtEk+h20SrF1Q==}
 
   astro@5.0.2:
     resolution: {integrity: sha512-MKf82vUiTZ2aK+c/8EDnLYIsToBdVVk4PuhhGdE8F/PcuUyS+oIcuCPf30iVf8WCQwXOfnYGnv1JbRjzkqUc3w==}
@@ -2390,6 +2396,8 @@ snapshots:
   aria-query@5.3.2: {}
 
   array-iterate@2.0.1: {}
+
+  astro-compressor@1.0.0: {}
 
   astro@5.0.2(jiti@1.21.6)(rollup@4.28.0)(typescript@5.7.2)(yaml@2.6.1):
     dependencies:
