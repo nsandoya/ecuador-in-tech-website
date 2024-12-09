@@ -1,0 +1,11 @@
+---
+interface Props{
+    url: string
+}
+
+const {url} = Astro.props
+---
+<img
+    src={url}
+    class="w-full h-60 bg-slate-700"
+/>
