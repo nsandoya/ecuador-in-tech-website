@@ -9,15 +9,13 @@ import LinkTo from '../components/ui/LinkTo.astro'
 import Tag from '../components/ui/Tag.astro'
 import LinksBar from '../components/LinksBar.astro'
 import HeaderLandingPage from '../components/HeaderLandingPage.astro'
+import ProfileCard from '../components/ui/ProfileCard.astro'
 
 ---
 
 <Layout title="Events - Ecuador In Tech">
   <HeaderLandingPage title="Git + GitHub"/>
-  <ButtonOutlinedWhite text='Inscríbete'/>
-  <Tag tag='Tag súper largo'/>
-  <LinkTo title='Comunidad'/>
-  <LinksBar links={["ecuadorintech.org", "herux.org"]}/>
+  <ProfileCard url={"ffe"} title="Ponente" subtitle="Profesión"/>
   <div class="container mx-auto px-4 py-12" x-data="{ selectedEvent: null }">
     <h1 class="text-4xl font-bold mb-8">Eventos</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

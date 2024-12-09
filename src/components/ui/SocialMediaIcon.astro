@@ -1,0 +1,32 @@
+---
+import type { SocialMedia } from "../../interfaces/communities"
+
+const socialMediaIcons = [
+    {
+        socialMediaName: "github",
+        icon: "icon"
+    },
+    {
+        socialMediaName: "instagram",
+        icon: "icon"
+    },
+    {
+        socialMediaName: "linkedin",
+        icon: "icon"
+    }
+]
+
+const {socialMediaPlatform, url} = Astro.props as SocialMedia
+
+const socialMediaIcon = socialMediaIcons.find(
+    (item) => item.socialMediaName === socialMediaPlatform
+)?.icon; 
+---
+
+<div>
+    {socialMediaIcon ? (
+            <a href={url}>
+                <div>{socialMediaIcon}</div>
+            </a>
+        ) : ""}
+</div>

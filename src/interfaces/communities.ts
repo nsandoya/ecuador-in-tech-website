@@ -10,3 +10,8 @@ export interface Links{
     website: string, 
     social: string
 }
+
+export interface SocialMedia {
+    socialMediaPlatform: string,
+    url: string
+}
