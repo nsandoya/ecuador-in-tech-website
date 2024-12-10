@@ -10,4 +10,3 @@ export interface Links{
     website: string, 
     social: string
 }
-

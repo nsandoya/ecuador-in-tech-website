@@ -9,8 +9,3 @@ export interface Event {
     image: string,
     attendees: number
 }
-
-export interface SocialMedia {
-    socialMedia: string,
-    url: string
-}

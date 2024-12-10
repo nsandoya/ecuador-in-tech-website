@@ -2,15 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import events from '../assets/events.json'
 import CardEvent from '../components/CardEvent.astro'
-import type { Event, SocialMedia } from '../interfaces/events'
-import Banner from '../components/ui/Banner.astro'
-import ButtonOutlinedWhite from '../components/ui/ButtonOutlinedWhite.astro'
-import LinkTo from '../components/ui/LinkTo.astro'
-import Tag from '../components/ui/Tag.astro'
-import LinksBar from '../components/LinksBar.astro'
-import HeaderLandingPage from '../components/HeaderLandingPage.astro'
-import ProfileCard from '../components/ui/ProfileCard.astro'
-import InfoBar from '../components/InfoBar.astro'
+import type { Event } from '../interfaces/events'
 ---
 
 <Layout title="Events - Ecuador In Tech">
@@ -18,7 +10,7 @@ import InfoBar from '../components/InfoBar.astro'
     <h1 class="text-4xl font-bold mb-8">Eventos</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {
-        events.map((event, index) => (
+        events.map((event:Event, index) => (
           <CardEvent {...event}/>
         ))
       }

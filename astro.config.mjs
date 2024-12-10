@@ -5,10 +5,12 @@ import tailwind from '@astrojs/tailwind';
 
 import alpinejs from '@astrojs/alpinejs';
 
-import astroIcon from 'astro-icon';
+import sitemap from '@astrojs/sitemap';
+
+import compressor from 'astro-compressor';
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://ecuadorintech.org",
-  integrations: [tailwind(), alpinejs(), astroIcon()]
-});
+  integrations: [tailwind(), alpinejs(), sitemap(), compressor()]
+})
