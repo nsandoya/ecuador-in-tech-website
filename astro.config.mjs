@@ -13,3 +13,4 @@ import compressor from 'astro-compressor';
 export default defineConfig({
   site: "https://ecuadorintech.org",
   integrations: [tailwind(), alpinejs(), sitemap(), compressor()]
+})
