@@ -16,7 +16,7 @@
 @layer {
     /* Global text styles */
     h1, h2, h3{
-        @apply font-montserrat text-slate-800
+        @apply font-montserrat 
     }
 
     h4, h5, a, p, span{
