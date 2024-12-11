@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'montserrat';
+    src: url("../assets/fonts/Montserrat.ttf") format('truetype')
+    /* font-weight: 400;
+    font-style: normal; */
+  }
+  
+  @font-face {
+    font-family: 'gabarito';
+    src: url('../assets/fonts/Gabarito.ttf') format('truetype')
+    /* font-weight: 400;
+    font-style: normal; */
+  }
+
+@layer {
+    h1{
+        @apply font-montserrat
+    }
+
+}
