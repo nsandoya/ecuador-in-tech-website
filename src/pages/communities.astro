@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import communities from '../assets/communities.json'
 import type { Community } from '../interfaces/communities';
-import CardCommunity from '../components/CardCommunity.astro';
+import CommunityCard from '../components/CommunityCard/CommunityCard.astro';
 
 ---
 
@@ -12,7 +12,15 @@ import CardCommunity from '../components/CardCommunity.astro';
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {
         communities.map((community:Community) => (
-          <CardCommunity {...community} />
+          <CommunityCard
+            title={community.name}
+            description={community.description}
+            tags={community.tags}
+            githubUrl="https://github.com"
+            linkedinUrl="https://linkedin.com"
+            instagramUrl="https://instagram.com"
+            logoUrl={community.image}
+          />
         ))
       }
     </div>
