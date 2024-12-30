@@ -8,7 +8,7 @@
         "Open Source",
         "Programming"
       ],
-      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=300"
+      "image": "/kernel-chaos.png"
     },
     {
       "name": "Wordpress Guayaquil",
@@ -20,7 +20,7 @@
         "UX",
         "Creative"
       ],
-      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=300"
+      "image": "/wordpress.png"
     },
     {
       "name": "HerUX",
@@ -31,7 +31,7 @@
         "UI",
         "Creative"
       ],
-      "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=300"
+      "image": "/herux.png"
     }
   ]
   
