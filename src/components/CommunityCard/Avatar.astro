@@ -6,12 +6,11 @@ interface Props {
 
 const { logoUrl, title } = Astro.props;
 ---
-
-<div class="relative group">
+<div class="relative group items-center">
   <div class="absolute -inset-0.5 bg-gradient-to-r rounded-full opacity-75 group-hover:opacity-100 blur transition duration-200"></div>
   <img
     src={logoUrl}
     alt={title}
-    class="relative w-16 h-16 rounded-full object-cover bg-white"
+    class="relative w-24 h-24 rounded-full object-cover bg-white"
   />
 </div>
