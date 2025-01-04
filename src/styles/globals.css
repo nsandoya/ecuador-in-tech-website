@@ -36,13 +36,4 @@
   svg {
     @apply text-sm;
   }
-
-  /* FAQ collapsibles style */
-  summary {
-    list-style: none; /* Elimina el marcador predeterminado */
-  }
-  
-  summary::-webkit-details-marker {
-    display: none; /* Para navegadores basados en Webkit (Chrome, Safari) */
-  }
 }

@@ -9,7 +9,10 @@ import Accordion from "./Accordion.astro";
     <div class="container faqs-container mx-auto shadow-md p-6 pt-0">
       {
         commonQuestions.map((question, index) => (
-          <Accordion {...question} id={index++ < commonQuestions.length - 1? index++ : null}/>
+          <Accordion
+            {...question}
+            id={index++ < commonQuestions.length - 1 ? index++ : null}
+          />
         ))
       }
     </div>
