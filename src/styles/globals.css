@@ -36,4 +36,13 @@
   svg {
     @apply text-sm;
   }
+
+  /* Components custom styles */
+  .faqs-container {
+    @apply mx-auto shadow-md p-6 pt-0 rounded-xl;
+  }
+
+  .accordion-transition {
+    transition: all 400ms ease-in-out;
+  }
 }

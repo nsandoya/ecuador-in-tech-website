@@ -1,31 +1,52 @@
 ---
 import downIcon from "../../public/icons/downIcon.svg?raw";
-const { title, description, id } = Astro.props;
+const { title, description, id, last } = Astro.props;
 ---
+<!-- 
+Child component: Alpine.js logic
+
+1. Each child observes the `activeId` state from the `faqs` store by using the reactive `visible` property.
+2. When clicking on a child component, the global `activeId` state in the store is updated:
+   - If accordion is open (in child: `visible` === `true`), it sets `activeId` to `null` and closes.
+   - If accordion is closed (in child: `visible` === `false`), it replaces the `activeId` value with its own `id` value and opens.
+3. When `activeId` changes, the child's classes related to its visibility are automatically updated.
+
+This way, each child component can respond reactively to the `activeId` global state.
+-->
 <div
-  x-data="{ 
-        visible: false,
-        toggle() {
-            this.visible = !this.visible
-        }
-    }"
+  x-data=`{ 
+    get visible() {
+      return Alpine.store && Alpine.store('faqs')?.isVisible(${id});
+    },
+
+    toggle(id){
+      if ($store.faqs.activeId === id) {
+        $store.faqs.setActiveId(null); 
+      } else {
+        $store.faqs.setActiveId(id);
+      };
+
+    }
+  }`
+  
   class:list={[
-  	"bg-white py-6 transition-all duration-300 ease-in-out overflow-hidden",
-  	{ "border-b-0": id === null },
-  	{ "border-b-2": id },
+  	"bg-white py-6 accordion-transition overflow-hidden",
+    {"border-b-0": last === id},
+    {"border-b-2": last != id}
   ]}
 >
   <div
-    @click="toggle()"
+    @click=`toggle(${id})`
     class="flex flex-row items-center text-lg font-semibold cursor-pointer"
-  >
+    :class="visible && 'text-blue-500'"
+    >
     <div class="w-[95%] px-4">
       {title}
     </div>
     <div
       x-transition
       class="w-fit"
-      :class="visible ? 'transform rotate-180 transition-transform duration-400' : 'transform rotate-0 transition-transform duration-400'"
+      :class="visible ? 'transform rotate-180 accordion-transition' : 'transform rotate-0 accordion-transition'"
     >
       <Fragment set:html={downIcon} />
     </div>
@@ -33,10 +54,10 @@ const { title, description, id } = Astro.props;
 
   <div
     x-transition
-    class="transition-all duration-300 ease-in-out overflow-hidden"
+    class="accordion-transition overflow-hidden"
     :class="visible ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'"
   >
-    <p class="w-[90%] text-gray-600 mt-2 px-4 overflow-hidden">
+    <p class="w-[90%] text-gray-600 text-base mt-2 px-4 overflow-hidden">
       {description}
     </p>
   </div>
