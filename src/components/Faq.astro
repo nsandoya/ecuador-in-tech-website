@@ -6,15 +6,37 @@ import Accordion from "./Accordion.astro";
 
 Father component: Alpine.js logic
 
-1. The global store `faqs` manages the `activeId` state, which represents the ID of the last accordion opened by the user.
-2. Each child component observes the `activeId` state using the store's  `isVisible` function.
-3. When the user clicks a child component, the store's `activeId` is updated, and this change automatically propagates to all children.
-4. Every child checks if the new active ID matches its own, and opens or closes accordingly.
+1. `activeId` is a global state that stores the ID of the last accordion opened by the user.
+2. When clicking on a child component (an accordion), the `toggle` method updates the `activeId`:
+   - If the clicked accordion's ID matches the current `activeId`, it collapses (resets to `null`).
+   - If it's different, the new ID is set as `activeId`.
+3. Every accordion checks if its ID matches `activeId` by using the `isVisible` method. This way, accordion opens or closes.
 
-This ensures that only one accordion is open at a time.
+This ensures only one accordion is open at a time.
 
 -->
-<section class="py-16 bg-white">
+<section 
+  x-data="{
+    activeId: null,
+
+    setActiveId(id) {
+      this.activeId = id;
+    },
+
+    isVisible(id) {
+      return this.activeId === id;
+    },
+
+    toggle(id){
+        if (this.activeId === id) {
+          this.setActiveId(null)
+        } else {
+          this.setActiveId(id)
+        };
+      }  
+    }"
+
+  class="py-16 bg-white">
   <div class="container mx-auto px-4">
     <h2 class="text-3xl font-bold text-center mb-12">Preguntas frecuentes</h2>
     <div
@@ -32,29 +54,3 @@ This ensures that only one accordion is open at a time.
     </div>
   </div>
 </section>
-
-<!-- Client side rendering -->
-<script>
-  import Alpine from "alpinejs";
-  
-  interface FaqStore {
-    activeId: number | null;
-    setActiveId(id: number | null): void;
-    isVisible(id:number | null): boolean
-  }
-
-  Alpine.store('faqs', {
-    activeId: null,
-
-    setActiveId(id:number | null) {
-      this.activeId = id;
-    },
-
-    isVisible(id:number) {
-      return this.activeId === id;
-    },
-
-  } as FaqStore)
-
-  Alpine.start()
-</script>

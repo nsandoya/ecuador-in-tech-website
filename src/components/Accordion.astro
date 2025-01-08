@@ -5,30 +5,17 @@ const { title, description, id, last } = Astro.props;
 <!-- 
 Child component: Alpine.js logic
 
-1. Each child observes the `activeId` state from the `faqs` store by using the reactive `visible` property.
-2. When clicking on a child component, the global `activeId` state in the store is updated:
-   - If accordion is open (in child: `visible` === `true`), it sets `activeId` to `null` and closes.
-   - If accordion is closed (in child: `visible` === `false`), it replaces the `activeId` value with its own `id` value and opens.
-3. When `activeId` changes, the child's classes related to its visibility are automatically updated.
+1. Each accordion receives a unique `id` that identifies it.
+2. When clicking on an accordion:
+   2.1 The `toggle(id)` method defined in the parent component is called.
+   2.2 The global state `activeId` is updated with the new ID.
+3. Each accordion checks if its ID matches `activeId` using the `isVisible` method:
+   - If it matches, the accordion expands (`isVisible` is `true`).
+   - If it doesn't match, it remains collapsed (`isVisible` is `false`).
 
 This way, each child component can respond reactively to the `activeId` global state.
 -->
-<div
-  x-data=`{ 
-    get visible() {
-      return Alpine.store && Alpine.store('faqs')?.isVisible(${id});
-    },
-
-    toggle(id){
-      if ($store.faqs.activeId === id) {
-        $store.faqs.setActiveId(null); 
-      } else {
-        $store.faqs.setActiveId(id);
-      };
-
-    }
-  }`
-  
+<div  
   class:list={[
   	"bg-white py-6 accordion-transition overflow-hidden",
     {"border-b-0": last === id},
@@ -38,7 +25,7 @@ This way, each child component can respond reactively to the `activeId` global s
   <div
     @click=`toggle(${id})`
     class="flex flex-row items-center text-lg font-semibold cursor-pointer"
-    :class="visible && 'text-blue-500'"
+    :class=`isVisible(${id}) && 'text-blue-500'`
     >
     <div class="w-[95%] px-4">
       {title}
@@ -46,7 +33,7 @@ This way, each child component can respond reactively to the `activeId` global s
     <div
       x-transition
       class="w-fit"
-      :class="visible ? 'transform rotate-180 accordion-transition' : 'transform rotate-0 accordion-transition'"
+      :class=`isVisible(${id}) ? 'transform rotate-180 accordion-transition' : 'transform rotate-0 accordion-transition'`
     >
       <Fragment set:html={downIcon} />
     </div>
@@ -55,7 +42,7 @@ This way, each child component can respond reactively to the `activeId` global s
   <div
     x-transition
     class="accordion-transition overflow-hidden"
-    :class="visible ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'"
+    :class=`isVisible(${id}) ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'`
   >
     <p class="w-[90%] text-gray-600 text-base mt-2 px-4 overflow-hidden">
       {description}
