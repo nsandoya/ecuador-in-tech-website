@@ -1,0 +1,51 @@
+---
+import downIcon from "../../public/icons/downIcon.svg?raw";
+const { title, description, id, last } = Astro.props;
+---
+<!-- 
+Child component: Alpine.js logic
+
+1. Each accordion receives a unique `id` that identifies it.
+2. When clicking on an accordion:
+   2.1 The `toggle(id)` method defined in the parent component is called.
+   2.2 The global state `activeId` is updated with the new ID.
+3. Each accordion checks if its ID matches `activeId` using the `isVisible` method:
+   - If it matches, the accordion expands (`isVisible` is `true`).
+   - If it doesn't match, it remains collapsed (`isVisible` is `false`).
+
+This way, each child component can respond reactively to the `activeId` global state.
+-->
+<div  
+  class:list={[
+  	"bg-white py-6 accordion-transition overflow-hidden",
+    {"border-b-0": last === id},
+    {"border-b-2": last != id}
+  ]}
+>
+  <div
+    @click=`toggle(${id})`
+    class="flex flex-row items-center text-lg font-semibold cursor-pointer"
+    :class=`isVisible(${id}) && 'text-blue-500'`
+    >
+    <div class="w-[95%] px-4">
+      {title}
+    </div>
+    <div
+      x-transition
+      class="w-fit"
+      :class=`isVisible(${id}) ? 'transform rotate-180 accordion-transition' : 'transform rotate-0 accordion-transition'`
+    >
+      <Fragment set:html={downIcon} />
+    </div>
+  </div>
+
+  <div
+    x-transition
+    class="accordion-transition overflow-hidden"
+    :class=`isVisible(${id}) ? 'max-h-72 opacity-100' : 'max-h-0 opacity-0'`
+  >
+    <p class="w-[90%] text-gray-600 text-base mt-2 px-4 overflow-hidden">
+      {description}
+    </p>
+  </div>
+</div>
