@@ -33,8 +33,13 @@
   }
 
   span,
-  svg {
+  svg{
     @apply text-sm;
+  }
+  
+  /* Avoids undesired offcanvas menu 'blink' when closing */
+  [x-cloak] {
+    display: none !important;
   }
 
   /* Components custom styles */
