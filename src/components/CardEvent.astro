@@ -35,11 +35,12 @@ const eventHeaderProps = { title, image, modality, description };
       </svg>
       <span>
         {
-          new Date(date).toLocaleDateString("en-US", {
+          new Date(date).toLocaleDateString("es", {
 		weekday: "long",
 		year: "numeric",
 		month: "long",
 		day: "numeric",
+    timeZone: 'ECT'
 	})
         }
       </span>
