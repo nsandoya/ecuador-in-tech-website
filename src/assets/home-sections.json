@@ -1,7 +1,7 @@
 {
     "aboutUs": {
         "id": "about-us",
-        "title": "Somos la metacomunidad que conecta y potencia a las comunidades tech.",
+        "title": "Somos la metacomunidad que conecta y potencia a las comunidades tech",
         "subtitle": "",
         "description": "En nuestra metacomunidad, unimos fuerzas, compartimos conocimientos y crecemos juntos. Conectamos comunidades tech para impulsar el futuro de la innovación y la colaboración. Únete a nosotros y sé parte del cambio.",
         "image": {
@@ -29,7 +29,7 @@
     },
     "exploreEvents": {
         "id": "explore-events",
-        "title": "Únete a nuestros próximos eventos y amplía tus horizontes.",
+        "title": "Únete a nuestros próximos eventos y amplía tus horizontes",
         "subtitle": "",
         "description": "Nos encanta aprender, compartir y expandir nuestros horizontes constantemente. ¡Anímate a explorar todas las actividades que las comunidades tech tienen para ti!",
         "image": {
