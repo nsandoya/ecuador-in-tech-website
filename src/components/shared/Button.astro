@@ -1,0 +1,12 @@
+---
+const { text, link, style } = Astro.props;
+---
+<a href={link}>
+  <div class:list={[
+    "base-btn",
+    {"outlined-white-btn": style === "outline"},
+    {"primary-btn": style === "primary"},
+  ]}>
+    <p class="text-base">{text}</p>
+  </div>
+</a>
