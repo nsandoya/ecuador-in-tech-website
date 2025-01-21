@@ -58,7 +58,6 @@
 		@apply border-white font-semibold text-white hover:bg-white hover:text-blue-600;
 	}
 
-
 	.faqs-container {
 		@apply mx-auto shadow-md p-6 pt-0 rounded-xl;
 	}
