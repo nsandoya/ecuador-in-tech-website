@@ -16,6 +16,7 @@ const {
 } = Astro.props as Event;
 
 const eventHeaderProps = { id, title, image, modality, description };
+const justDate = date.split("T");
 ---
 
 <CardBase {...eventHeaderProps}>
@@ -37,7 +38,7 @@ const eventHeaderProps = { id, title, image, modality, description };
       </svg>
       <span>
         {
-          new Date(date).toLocaleDateString("es", {
+          new Date(justDate[0]).toLocaleDateString("es-EC", {
             weekday: "long",
             year: "numeric",
             month: "long",
