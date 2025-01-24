@@ -1,5 +1,18 @@
 [
 	{
+		"id": "devcon-watch-party-gye",
+		"title": "DEVCON VII Watch Party - Guayaquil",
+		"description": "Conecta con la tecnología del futuro y sé parte de la transformación digital en ECU",
+		"longDescription":"DEVCON, la conferencia global más influyente de Ethereum, es un crisol de desarrolladores, innovadores y visionarios. Celebrado en Bangkok, DEVCON SEA fue un punto de encuentro clave para la comunidad global, donde una delegación de ocho representantes de Ecuador se sumergió en las últimas innovaciones y principios de Ethereum. DEVCON VII Watch Party es una iniciativa multi-ciudad para compartir los aprendizajes de DEVCON SEA con la comunidad local. Este evento de visionado presentará grabaciones de charlas principales, paneles y sesiones técnicas de DEVCON VII, diseñadas para educar y fomentar el debate y la creación de redes entre los asistentes en Quito, Guayaquil y Cuenca.",
+		"link": "https://lu.ma/ik89v6yr",
+		"date": "2025-01-30",
+		"place": "Universidad Bolivariana del Ecuador (UBE)",
+		"modality": "Presencial",
+		"hostedBy": "DEVCON",
+		"image": "/devcon_gye_2025.jpg",
+		"attendees": 45
+	},
+	{
 		"id": "path-to-impact-2",
 		"title": "Path to Impact: Brayen Gavilanes",
 		"description": "Automatización web para postulaciones a empleo con Selenium",
@@ -18,7 +31,7 @@
 		"description": "Estrategias para impulsar tu carrera en IT",
 		"longDescription": "Construir una carrera en el mundo tech es un camino tan desafiante como lleno de oportunidades. Path to impact es una serie de charlas pensadas para acompañarte en el proceso, ofreciendo estrategias y consejos prácticos para que puedas sobresalir y dejar tu marca en un sector competitivo, sin importar tu nivel de experiencia o área de especialización. Descubrirás las habilidades y perfiles en demanda en empresas tech, y aprenderás métodos y consejos prácticos para comunicar tu experiencia de forma auténtica y proactiva. Si estás dando tu primer paso en el mundo IT o buscando un cambio en tu carrera, esta serie es para ti. ¡Únete y transforma tu camino profesional!",
 		"link": "https://forms.gle/BHCDTkGfGBH8Rio49",
-		"date": "2025-01-17T18:00",
+		"date": "2025-01-17",
 		"place": "Online",
 		"modality": "Virtual",
 		"hostedBy": "Ecuador In Tech",
@@ -31,7 +44,7 @@
 		"description": "Hands-on Workshop para iniciantes.",
 		"longDescription": "¿Interesado en el mundo tech pero no sabes por dónde empezar? ¡Este taller es para ti! Únete a nosotros para aprender los fundamentos de Git y GitHub, las herramientas esenciales para la colaboración en cualquier proyecto digital.",
 		"link": "https://forms.gle/BHCDTkGfGBH8Rio49",
-		"date": "2024-12-04T19:00",
+		"date": "2024-12-04",
 		"place": "Online",
 		"modality": "Virtual",
 		"hostedBy": "Ecuador In Tech",
