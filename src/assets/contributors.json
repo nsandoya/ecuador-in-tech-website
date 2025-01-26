@@ -4,25 +4,25 @@
       "name": "Nataly Sandoya",
       "description": "She has developed the user interfaces of the main Ecuador In Tech website. She has also developed the artwork for the events that have taken place since the community began, giving it a visual identity.",
       "github": "https://github.com/nsandoya",
-      "image": "/nataly.png"
+      "image": "/images/people/nataly.png"
     },
     {
       "name": "Iván Manzaba",
       "description": "He has contributed his knowledge of Git and GitHub as a speaker at the community's first event. He has also actively contributed to the code of the current Ecuador In Tech website and actively helps with community management.",
       "github": "https://github.com/IvanM9",
-      "image": "/ivan.png"
+      "image": "/images/people/ivan.png"
     },
     {
         "name": "Brayen Gavilanez",
         "description": "Co-founder, he has contributed with projects, management, and leadership within it. He has managed to connect different actors, expanding its reach.",
         "github": "https://github.com/bjgavilanes",
-        "image": "/brayen.png"
+        "image": "/images/people/brayen.png"
     },
     {
         "name": "David Cortez",
         "description": "Co-founder, he has shaped the community through strategic leadership, collaborative partnerships, and contributions to both code and impactful initiatives.",
         "github": "https://github.com/davcortez",
-        "image": "/dav.png"
+        "image": "/images/people/dav.png"
     }
   ],
   "activeContributors": [
@@ -30,14 +30,14 @@
       "name": "Jhon Merchan",
       "description": " He has actively participated, connecting Ecuador In Tech with other leaders and disseminating the activities, expanding the community's network.",
       "github": "https://github.com/jhon-p16",
-      "image": "/jhon.png"
+      "image": "/images/people/jhon.png"
     }
   ],
   "valuedContributors": [
     {
-      "name": "Agustina",
-      "description": "She has contributed her extensive knowledge as speaker in the Path to Path event series, which consists of several talks designed to support people in their process, offering practical strategies and advice to excel and leave their mark in a competitive sector, regardless of their level of experience or area of expertise.",
-      "image": "/agustina.png"
+      "name": "Agustina Scandogliero",
+      "description": "She has contributed her extensive knowledge as speaker in the Path to impact: a series of talks designed to support people in their job-seeking process, offering practical strategies and advice to excel and leave their mark in the IT industry, regardless of their level of experience or area of expertise.",
+      "image": "/images/people/agustina.png"
     }
   ]
 } 
