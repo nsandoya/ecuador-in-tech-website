@@ -16,14 +16,17 @@ const { coreContributors: coreContributorsData, activeContributors: activeContri
 };
 ---
 
-<div class="hall-of-fame">
-  <h1 class="text-4xl font-bold mb-8">Hall of Fame</h1>
+<div class="hall-of-fame w-fit mx-auto">
+  <h4 class="mb-8 font-semibold text-[var(--text-secondary)]">Hall of Fame</h4>
+  <h1 class="text-4xl font-bold mb-4 w-full md:w-[65%]">Creemos en el poder de la colaboración y el trabajo en equipo
+  </h1>
+  <h3 class="mb-8 font-semibold text-[var(--text-primary)]">— Y esto es un testamento de ello</h3>
   
   <section class="contributor-section">
     <h2 class="text-2xl font-bold mb-4">Colaboradores principales</h2>
     <div class="contributor-list">
       {coreContributorsData.map(contributor => (
-        <div class="contributor-item">
+        <div class="contributor-item hover:shadow-sm">
           <div class="contributor-avatar">
             <img 
               src={contributor.image || `https://api.dicebear.com/7.x/avataaars/svg?seed=${contributor.name}`} 
@@ -31,7 +34,7 @@ const { coreContributors: coreContributorsData, activeContributors: activeContri
             />
           </div>
           <div class="contributor-info">
-            <h3 class="text-lg font-semibold">{contributor.name}</h3>
+            <h3 >{contributor.name}</h3>
             <p class="text-md text-gray-600">{contributor.description}</p>
             <div class="social-links">
               {contributor.github && (
@@ -51,6 +54,8 @@ const { coreContributors: coreContributorsData, activeContributors: activeContri
         </div>
       ))}
     </div>
+    <!-- <div class="contributor-section">
+    </div> -->
   </section>
 
   <section class="contributor-section">
@@ -85,6 +90,8 @@ const { coreContributors: coreContributorsData, activeContributors: activeContri
         </div>
       ))}
     </div>
+    <!-- <div class="flex flex-col md:flex-row">
+    </div> -->
   </section>
 
   <section class="contributor-section">
@@ -119,5 +126,7 @@ const { coreContributors: coreContributorsData, activeContributors: activeContri
         </div>
       ))}
     </div>
+    <!-- <div class="flex flex-col md:flex-row">
+    </div> -->
   </section>
 </div> 

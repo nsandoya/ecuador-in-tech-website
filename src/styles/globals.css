@@ -237,55 +237,56 @@
 
 	/* Hall of Fame styles */
 	.hall-of-fame {
-		@apply max-w-[1200px] mx-auto py-12 px-4;
+		@apply /* max-w-[1200px]  */mx-auto py-4 /* px-4 */;
 	}
 
 	.hall-of-fame h1 {
-		@apply text-4xl font-bold text-center mb-12 text-[var(--text-primary)];
+		@apply text-4xl font-bold text-left mb-12 text-[var(--text-primary)];
 	}
 
 	.contributor-section {
-		@apply mb-12;
+		@apply flex flex-col md:flex-row w-fit my-16;
 	}
 
 	.contributor-section h2 {
-		@apply text-2xl font-bold mb-6 pb-2 border-b-2 border-[var(--border-color)] text-[var(--text-primary)];
+		@apply w-full md:w-[268px] text-2xl font-bold mb-6 pb-2 border-b-2 border-[var(--border-color)] text-[var(--text-primary)];
 	}
 
 	.contributor-list {
-		@apply flex flex-col gap-6;
+		@apply grid grid-cols-1 gap-8 pl-3 md:pl-12 mt-6 md:mt-0 w-fit mx-auto !important;
+		border-left: 2px solid #dadbdd !important;
 	}
 
 	.contributor-item {
-		@apply flex gap-6 bg-[var(--card-bg)] rounded-lg p-6 shadow-md transition-transform duration-200;
+		@apply flex flex-row w-fit md:w-[500px] lg:w-[664px] gap-8 bg-[var(--card-bg)] rounded-lg p-6 pt-0 transition-transform duration-200  !important; 
 	}
 
-	.contributor-item:hover {
+	/* .contributor-item:hover {
 		@apply translate-x-2;
-	}
+	} */
 
 	.contributor-avatar {
 		@apply flex-shrink-0;
 	}
 
 	.contributor-avatar img {
-		@apply w-20 h-20 rounded-full object-cover;
+		@apply w-28 h-28 rounded-full object-cover;
 	}
 
 	.contributor-info {
-		@apply flex-grow;
+		@apply flex flex-col ;
 	}
 
 	.contributor-info h3 {
-		@apply text-xl font-bold mb-2 text-[var(--text-primary)];
+		@apply text-[1.25rem] font-bold mb-2 font-semibold text-[var(--text-primary)] !important;
 	}
 
 	.contributor-info p {
-		@apply text-[var(--text-secondary)] mb-4 leading-relaxed;
+		@apply /* line-clamp-3  */text-[var(--text-secondary)] mb-4 leading-relaxed text-base;
 	}
 
 	.social-links {
-		@apply flex gap-4;
+		@apply flex gap-4 my-4;
 	}
 
 	.social-links a {
