@@ -1,5 +1,18 @@
 [
 	{
+		"id": "path-to-impact-3",
+		"title": "Path to Impact: Danaé Townsend",
+		"description": "Beyond: Equilibrio entre datos y humanidad",
+		"longDescription":"¿Cómo automatizar el proceso de selección de candidatos sin perder su valor humano? Ante un panorama cada vez más desafiante —y a su vez lleno de oportunidades— te invitamos a ser parte de Beyond:  Equilibrio entre datos y humanidad. Conocerás los hallazgos, retos y progresos de Danaé y su equipo durante su trabajo en Beyond para combinar clasificación y análisis de datos con IA, fuentes cualitativas de información y juicio humano. Además, podrás informarte sobre las tendencias actuales en procesos de contratación, y cómo puedes usar estos aprendizajes a tu favor. ¡Anímate a descubrir cómo una visión más amplia del mundo IT puede ayudarte a destacar tus habilidades y experiencias de forma única!",
+		"link": "https://forms.gle/Hgs2cGvcEugzqQCu8",
+		"date": "2025-01-28T19:00",
+		"place": "Online",
+		"modality": "Virtual",
+		"hostedBy": "Ecuador In Tech",
+		"image": "/path_to_impact_3.jpg",
+		"attendees": 30
+	},
+	{
 		"id": "devcon-watch-party-gye",
 		"title": "DEVCON VII Watch Party - Guayaquil",
 		"description": "Conecta con la tecnología del futuro y sé parte de la transformación digital en ECU",
