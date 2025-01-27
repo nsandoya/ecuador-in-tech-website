@@ -2,25 +2,25 @@
   "coreContributors": [
     {
       "name": "Nataly Sandoya",
-      "description": "She has developed the user interfaces of the main Ecuador In Tech website. She has also developed the artwork for the events that have taken place since the community began, giving it a visual identity.",
+      "description": "Ha desarrollado las interfaces de usuario del sitio web principal de Ecuador In Tech. También ha diseñado el arte para los eventos que se han realizado desde que empezó la comunidad, así como otros materiales de comunicación, sentando así las bases de la identidad visual de la meta-comunidad.",
       "github": "https://github.com/nsandoya",
       "image": "/images/people/nataly.png"
     },
     {
       "name": "Iván Manzaba",
-      "description": "He has contributed his knowledge of Git and GitHub as a speaker at the community's first event. He has also actively contributed to the code of the current Ecuador In Tech website and actively helps with community management.",
+      "description": "Ha compartido su conocimiento de Git y GitHub como ponente en el primer evento de la comunidad. También ha contribuido activamente en el desarrollo del sitio web actual de Ecuador In Tech, y ayuda activamente con la gestión de la comunidad.",
       "github": "https://github.com/IvanM9",
       "image": "/images/people/ivan.png"
     },
     {
         "name": "Brayen Gavilanez",
-        "description": "Co-founder, he has contributed with projects, management, and leadership within it. He has managed to connect different actors, expanding its reach.",
+        "description": "Como cofundador, ha contribuido con proyectos, gestión y liderazgo dentro de la comunidad. Brayen ha logrado también conectar la meta-comunidad con diferentes actores, ampliando su alcance.",
         "github": "https://github.com/bjgavilanes",
         "image": "/images/people/brayen.png"
     },
     {
         "name": "David Cortez",
-        "description": "Co-founder, he has shaped the community through strategic leadership, collaborative partnerships, and contributions to both code and impactful initiatives.",
+        "description": "Como cofundador, ha moldeado la comunidad a través de un liderazgo estratégico, asociaciones colaborativas y contribuciones tanto al desarrollo del sitio web como a iniciativas de impacto.",
         "github": "https://github.com/davcortez",
         "image": "/images/people/dav.png"
     }
@@ -28,7 +28,7 @@
   "activeContributors": [
     {
       "name": "Jhon Merchan",
-      "description": " He has actively participated, connecting Ecuador In Tech with other leaders and disseminating the activities, expanding the community's network.",
+      "description": "Ha participado de forma activa, conectando Ecuador In Tech con otros líderes y difundiendo las actividades, ampliando así la red de la meta-comunidad.",
       "github": "https://github.com/jhon-p16",
       "image": "/images/people/jhon.png"
     }
@@ -36,7 +36,7 @@
   "valuedContributors": [
     {
       "name": "Agustina Scandogliero",
-      "description": "She has contributed her extensive knowledge as speaker in the Path to impact: a series of talks designed to support people in their job-seeking process, offering practical strategies and advice to excel and leave their mark in the IT industry, regardless of their level of experience or area of expertise.",
+      "description": "Ha aportado su amplio conocimiento como ponente en Path to impact: una serie de charlas diseñadas para apoyar a las personas en su proceso de búsqueda de empleo, ofreciendo estrategias prácticas y consejos para sobresalir y dejar huella en la industria de TI, sin importar su nivel de experiencia o área de especialización.",
       "image": "/images/people/agustina.png"
     }
   ]
