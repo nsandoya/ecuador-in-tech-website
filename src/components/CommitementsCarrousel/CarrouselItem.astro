@@ -1,0 +1,34 @@
+---
+import Button from "../shared/Button.astro"
+import Icon from "./Icon.astro"
+
+const {image, title, description, cta, link, icon} = Astro.props
+---
+<div class="w-fit flex">
+    <div class="w-full flex flex-row-reverse md:flex-row">
+      <img
+        src={image}
+        class="object-cover rounded-xl w-[300px] h-[400px] mr-4 md:mr-0"
+      />
+      <div
+        class="bg-white w-[600px] h-[400px] p-6 rounded-xl border-2 mx-0 mr-4 md:mx-4 flex flex-col align-top justify-between"
+      >
+        <div class="flex flex-col">
+          <div class="w-full flex">
+            <Icon icon={icon} />
+          </div>
+          <div class="flex flex-col w-fit my-6">
+            <h3 class="text-xl font-semibold">
+              {title}
+            </h3>
+            <p class="mt-4 text-gray-800">
+              {description}
+            </p>
+          </div>
+        </div>
+        <div class="flex">
+          <Button text={cta} link={link} style="primary" />
+        </div>
+      </div>
+    </div>
+  </div>
