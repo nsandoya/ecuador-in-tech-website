@@ -2,16 +2,25 @@
 	{
 		"title": "Crear espacios de encuentro",
 		"description": "Organizar eventos y actividades que permitan a los miembros de diferentes comunidades conocerse y colaborar.",
+		"cta": "Próximos eventos",
+		"link": "/events",
+		"image": "/images/codefest_conference.jpg",
 		"icon": "M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-	},
-	{
-		"title": "Desarrollar recursos compartidos",
-		"description": "Crear herramientas y recursos que sean útiles para todas las comunidades, como guías, tutoriales y plataformas de colaboración.",
-		"icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
 	},
 	{
 		"title": "Fomentar la participación",
 		"description": "Incentivar la participación activa de los miembros de todas las comunidades en la toma de decisiones y en la organización de actividades.",
+		"cta": "Miembros destacados",
+		"link": "/thanks",
+		"image": "/images/volunteering.jpg",
 		"icon": "M13 10V3L4 14h7v7l9-11h-7z"
+	},
+	{
+		"title": "Desarrollar recursos compartidos",
+		"description": "Crear herramientas y recursos que sean útiles para todas las comunidades, como guías, tutoriales y plataformas de colaboración.",
+		"cta": "GitHub Repo",
+		"link": "https://github.com/Ecuador-In-Tech",
+		"image": "/images/shared_resources.jpg",
+		"icon": "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
 	}
 ]
