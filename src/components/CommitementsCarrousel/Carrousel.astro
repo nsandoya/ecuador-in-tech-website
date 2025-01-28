@@ -1,8 +1,6 @@
 ---
-import Button from "../shared/Button.astro";
-import Icon from "./Icon.astro";
-
 import leftIcon from "../../../public/icons/leftIcon.svg?raw";
+import CarrouselItem from "./CarrouselItem.astro";
 
 interface Commitement {
 	title: string;
@@ -41,38 +39,13 @@ const commitementsLength = commitements.length;
       >
         {
           commitements.map((item: Commitement) => (
-            <div class="w-fit flex">
-              <div class="w-full flex flex-row-reverse md:flex-row">
-                <img
-                  src={item.image}
-                  class="object-cover rounded-xl w-[300px] h-[400px] mr-4 md:mr-0"
-                />
-                <div
-                  class="bg-white w-[600px] h-[400px] p-6 rounded-xl border-2 mx-0 mr-4 md:mx-4 flex flex-col align-top justify-between"
-                >
-                  <div class="flex flex-col">
-                    <div class="w-full flex">
-                      <Icon icon={item.icon} />
-                    </div>
-                    <div class="flex flex-col w-fit my-6">
-                      <h3 class="text-xl font-semibold">
-                        {item.title}
-                      </h3>
-                      <p class="mt-4 text-gray-800">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                  <div class="flex">
-                    <Button text={item.cta} link={item.link} style="primary" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <CarrouselItem {...item}/>
           ))
         }
       </div>
     </div>
+    
+    <!-- Slider buttons -->
     <button
       @click={`currentIndex = currentIndex - 1 >= 0 ? currentIndex - 1 : ${commitementsLength} - 1`}
       class="absolute -left-1 md:left-2 top-1/2 transform -translate-y-1/2 bg-white opacity-70 text-blue-600 px-2 rounded-xl"
@@ -80,6 +53,7 @@ const commitementsLength = commitements.length;
       <a class="p-1">
         <Fragment set:html={leftIcon} />
       </a>
+      
     </button>
     <button
       @click={`currentIndex = currentIndex + 1 < ${commitementsLength} ? currentIndex + 1 : 0`}
