@@ -1,3 +1,5 @@
+import type { SocialLinks } from "./common";
+
 export interface Community {
 	name: string;
 	description: string;
@@ -9,10 +11,4 @@ export interface Community {
 export interface Links {
 	website: string;
 	social?: SocialLinks;
-}
-
-export interface SocialLinks {
-	githubUrl?: string;
-	linkedinUrl?: string;
-	instagramUrl?: string;
 }

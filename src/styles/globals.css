@@ -139,7 +139,7 @@
 	.event-meta {
 		grid-area: event-details;
 
-		@apply grid mb-12 bg-gray-50 px-6 rounded-lg gap-[1.5rem] lg:gap-[1rem] xl:gap-[1.5rem] !important;
+		@apply grid mb-8 bg-gray-50 p-8 rounded-lg gap-[1.5rem] lg:gap-[1rem] xl:gap-[1.5rem] !important;
 	}
 
 	.meta-item {
@@ -234,4 +234,95 @@
 			@apply h-[10vh] min-h-[200px] !important;
 		}
 	}
+
+	/* Hall of Fame styles */
+	.hall-of-fame {
+		@apply /* max-w-[1200px]  */ /* px-4 */  mx-auto py-4;
+	}
+
+	.contributor-section {
+		@apply flex flex-col md:flex-row w-fit my-16;
+	}
+
+	.hall-of-fame h1 {
+		@apply w-full md:w-[65%] text-4xl font-bold text-left mb-12 text-[var(--text-primary)];
+	}
+
+	.hall-of-fame h3 {
+		@apply mb-8 font-semibold text-[var(--text-primary)] !important;
+	}
+
+	.hall-of-fame h4 {
+		@apply mb-8 font-semibold text-[var(--text-secondary)] !important;
+	}
+
+	.contributor-section h2 {
+		@apply w-full md:w-[268px] text-2xl font-bold mb-6 pb-2 border-[var(--border-color)] text-[var(--text-primary)] !important;
+	}
+
+	.contributor-list {
+		@apply grid grid-cols-1 gap-8 pl-3 md:pl-12 mt-6 md:mt-0 w-fit mx-auto !important;
+		border-left: 2px solid #dadbdd !important;
+	}
+
+	.contributor-item {
+		@apply flex flex-col md:flex-row w-fit md:w-[500px] lg:w-[664px] gap-8 bg-[var(--card-bg)] rounded-lg p-6 pt-0 transition-transform duration-200  !important;
+	}
+
+	/* .contributor-item:hover {
+		@apply translate-x-2;
+	} */
+
+	.contributor-avatar {
+		@apply flex-shrink-0;
+	}
+
+	.contributor-avatar img {
+		@apply w-28 h-28 rounded-full object-cover;
+	}
+
+	.contributor-info {
+		@apply flex flex-col;
+	}
+
+	.contributor-info h3 {
+		@apply text-[1.25rem] mb-2 font-semibold text-[var(--text-primary)] !important;
+	}
+
+	.contributor-info p {
+		@apply /* line-clamp-3  */  text-[var(--text-secondary)] mb-4 leading-relaxed text-base;
+	}
+
+	.social-links {
+		@apply flex gap-4 my-4;
+	}
+
+	.social-links a {
+		@apply text-[var(--text-secondary)] transition-colors duration-200;
+	}
+
+	.github-link:hover {
+		@apply text-[#333];
+	}
+
+	.youtube-link:hover {
+		@apply text-[#ff0000];
+	}
+
+	/* Dark mode variables */
+	:root {
+		--text-primary: #333;
+		--text-secondary: #666;
+		--card-bg: #fff;
+		--border-color: #eaeaea;
+	}
+
+	/* @media (prefers-color-scheme: dark) {
+		:root {
+			--text-primary: #fff;
+			--text-secondary: #a0a0a0;
+			--card-bg: #1a1a1a;
+			--border-color: #333;
+		}
+	} */
 }
